@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(background1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px 100vw);
+  height: 70vh;
+  position: relative;
+}
+.main .box {
+  width: 100%;
+  height: 70vh;
+  opacity: 0.63;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 60vw;
+  height: 70px;
+}
+nav img {
+  position: relative;
+  color: red;
+  z-index: 10;
+  width: 130px;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 86%;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  gap: 10px;
+}
+.hero > :nth-child(1) {
+  font-size: 47px;
+  font-weight: 1900px;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 300px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-size: 24px;
+  font-weight: 250px;
+  text-align: center;
+}
+.separation {
+  height: 5px;
+  background-color: rgb(81, 80, 80);
+  opacity: .5;
+}
+.btn {
+  
+  border: 2px solid rgba(243, 236, 236, 0.2);
+  color: white;
+  background-color: rgba(23, 23, 23, 0.3);
+  padding: 5px 25px 5px 10px;
+  cursor: pointer;
+  font-weight: 400px;
+  font-family: 'poppins';
+  font-size: 15px;
+  border-radius: 4px;
+}
+.herobtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 12px 26px 9px 22px;
+  border-radius: 4px;
+  border: 2px solid red;
+  font-size: 23px;
+  text-align: center;
+  font-weight: bolder;
+}
+.main input {
+  padding: 10px 105px 18px 7px;
+  border-radius: 4px;
+  border: 2px solid rgba(243, 236, 236, 0.2);
+  font-size: 17px;
+  background-color: rgba(23, 23, 23, 0.3);
+  font-weight: bold;
+  color: white;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 4px;
+  border: 2px solid red;
+}
+.btn-red-sm:hover{
+  background-color: rgb(229, 46, 46);
+}
+.btn-red:hover{
+  background-color: rgb(229, 46, 46);
+}
+.first{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+padding: 30px 5px;
+}
+
+@media screen and (max-width:803px){
+  .first{
+    flex-wrap: wrap;
+  }
+ .hero> :nth-child(1){
+  font-size: 23px;
+  
+ }
+ .hero> :nth-child(2){
+  font-size: 12px;
+
+ }
+.herobtn{
+flex-direction: column;
+}
+nav{
+  max-width: 70vw;
+};
+}
+.secimg{
+  position: relative;
+}
+.secimg img{
+  width: 30vw;
+  position: relative;
+  top: 30px;
+  z-index: 10;
+  padding: 30px 5px;
+
+}
+.secimg video{
+  position: absolute;
+  top: 114px;
+  right: 91px;
+  width: 30vw ;
+}
+.first p{
+  text-align: center;
+}
+.first> div {
+  display: flex;
+  flex-direction: column;
+}
+.first> div :nth-child(1){
+  font-size: 47px;
+  font-weight: 1900px;
+  font-family: "Anton", sans-serif;
+
+
+}
+.first> div :nth-child(2){
+  font-size: 24px;
+  font-weight: 300px;
+
+}
+.faq{
+  background-color: black;
+  color: white;
+ font-size: 24px;
+}
+
+.faq h2{
+  text-align: center;
+  font-size: 48px;
+  /* font-family: "Martel Sans", sans-serif; */
+  font-family: "Anton", sans-serif;
+font-weight: 50;
+}
+.faqbox{
+  background-color: rgb(35, 35, 35);
+  color: white;
+  display: flex;
+  padding: 23px;
+  max-width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  margin: 34px auto;
+  cursor: pointer;
+  transition: all is ease-in-out;
+
+}
+
+.faqbox:hover{
+  background-color: rgb(73, 72, 72);
+}
+.faqbox svg{
+  filter: invert(1);
+}
+
+footer{
+  color: white;
+  height:30vh;
+}
+.question{
+ position: relative;
+ left: 280px;
+}
+@media screen and (max-width:803px){
+  .question{
+  position: relative;
+  top: 0px;
+left: 0px;  }
+ 
+}
+
+.links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* gap: 34px; */
+  max-width: 60vw;
+  margin: auto;
+  font-size: 14px;
+}
+.links a{
+  color: white;
+  margin: 17px 12px;
+  
+}
